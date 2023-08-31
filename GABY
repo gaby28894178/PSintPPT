@@ -1,0 +1,44 @@
+Algoritmo piedraPapelTijera
+	// alumno Gabrielli Gabriell 
+	
+	Definir  user, pc Como Entero
+	Escribir  "seleccione opcion "
+	Escribir  "1-Piedra    2-papel   3 tijeras"
+	//leo de usuario
+	Leer  user
+	//randeom numero a  el azar 
+	pc=azar(3)+1
+	// veo si es empate 
+	si user==pc Entonces
+		Escribir  "#Empate ambos iguales ";
+	SiNo		
+		//Usuario pierde  pc Y Papel 
+		si user==1 && pc==2 Entonces
+			Escribir "usuario eligio [ PIEDRAS ] : ",user," y pc ",pc," GANA  PC"
+		FinSi
+		//usuario papel pc piedra 
+		si user==2 & pc==1 Entonces
+			Escribir "usuario eligio [ PAPEL ] : ",user," y pc ",pc," GANA USER"
+		FinSi
+		//Usuario  Papel  tijeras 
+		si user==2 & pc==3 Entonces
+			Escribir "usuario eligio [PAPEL] : ",user," y pc ",pc," GANA  PC"
+		FinSi
+		//usuario  Tijeras Pc Papel
+		si user==3 & pc==2 Entonces
+			Escribir "usuario eligio [TIJERA] : ",user," y pc ",pc," GANA USER"
+		FinSi
+		//Usuario piedra
+		si user==1 & pc==3 Entonces
+			Escribir "usuario eligio [ PIEDRAS ] : ",user," y pc ",pc," GANA  USER "
+		FinSi
+		//usuario tijeras Pc piedra
+		si user==3 & pc==1 Entonces
+			Escribir "usuario eligio [TIJERA] : ",user," y pc ",pc," GANA PC"
+		FinSi
+		// Termino el  siclo If completo 	
+	FinSi
+	//fin de Algoritmo 	
+	
+FinAlgoritmo
+
